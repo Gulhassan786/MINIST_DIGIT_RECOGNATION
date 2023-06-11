@@ -34,4 +34,3 @@ if st.button('Predict'):
     test_x = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     pred = load_model().predict(test_x.reshape(1, -1))
     st.write(f'result: {pred}')
-    # st.bar_chart(pred[0])
